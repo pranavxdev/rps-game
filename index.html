@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <h1 class="header">ROCK PAPER SCISSORS</h1>
+    </div>
+
+    <div id="modalContainer">
+      <div class="modal-items">
+        <h2 id="winner">winner</h2>
+        <button id="restart" onclick="history.go(0)">Play Again</button>
+      </div>
+    </div>
+
+    <div id="modal"></div>
+
+    <div class="game-container">
+      <div class="display-container">
+        <h2 id="scoreInfo">Choose Your Weapon.</h2>
+        <h3 id="scoreMessage">First to Score 5 points wins.</h3>
+      </div>
+
+      <div class="scores-container">
+        <div class="score-box">
+          <div id="playerSign" class="sign">?</div>
+          <p class="score">Player: <span id="playerScore">0</span></p>
+        </div>
+
+        <div class="score-box">
+          <div id="computerSign" class="sign">?</div>
+          <p class="score">Computer: <span id="computerScore">0</span></p>
+        </div>
+      </div>
+
+      <div class="weapons-container">
+        <button onclick="playerSelection='rock'" id="rock" class="weapon-btn">
+          <img class="icon" src="/weapons/rock.svg" alt="Rock" />
+        </button>
+        <button onclick="playerSelection='paper'" id="paper" class="weapon-btn">
+          <img class="icon" src="/weapons/paper.svg" alt="Paper" />
+        </button>
+        <button
+          onclick="playerSelection='scissors'"
+          id="scissors"
+          class="weapon-btn"
+        >
+          <img class="icon" src="/weapons/scissors.svg" alt="Scissors" />
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="links">
+        <p>made by <a href="https://twitter.com/pranavxdev">pranavxdev</a></p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
